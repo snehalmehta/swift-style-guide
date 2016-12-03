@@ -25,7 +25,6 @@ Writing Objective-C? Check out [Objective-C Style Guide](https://github.com/rayw
 * [Spacing](#spacing)
 * [Comments](#comments)
 * [Classes and Structures](#classes-and-structures)
-    * [Use of Self](#use-of-self)
     * [Protocol Conformance](#protocol-conformance)
     * [Computed Properties](#computed-properties)
     * [Final](#final)
@@ -422,27 +421,6 @@ The example above demonstrates the following style guidelines:
  + Indent getter and setter definitions and property observers.
  + Don't add modifiers such as `internal` when they're already the default. Similarly, don't repeat the access modifier when overriding a method.
 
-
-### Use of Self
-
-For conciseness, avoid using `self` since Swift does not require it to access an object's properties or invoke its methods.
-
-Use `self` when required to differentiate between property names and arguments in initializers, and when referencing properties in closure expressions (as required by the compiler):
-
-```swift
-class BoardLocation {
-    let row: Int, column: Int
-
-    init(row: Int, column: Int) {
-        self.row = row
-        self.column = column
-        
-        let closure = {
-            print(self.row)
-        }
-    }
-}
-```
 
 ### Computed Properties
 
