@@ -310,7 +310,7 @@ Keep imports minimal. For example, don't import `UIKit` when importing `Foundati
 
 ## Documentation
 
-* All extension and generic compoennts should have method documentation.
+* All extension and generic components should have method documentation.
    eg. 
     /// Gives height of text
     ///
