@@ -122,7 +122,7 @@ class Counter {
 
 ### Protocols
 
-Following Apple's API Design Guidelines, protocols names that describe what something is should be a noun. Examples: `Collection`, `WidgetFactory`. Protocols names that describe an ability should end in -ing, -able, or -ible. Examples: `Equatable`, `Resizing`.
+Protocols names that describe what something is should be a noun. Examples: `Collection`, `WidgetFactory`. Protocols names that describe an ability should end in -ing, -able, -delegate,or -ible. Examples: `Equatable`, `Resizing`, `viewManagerDelegate`
 
 ### Enumerations
 
