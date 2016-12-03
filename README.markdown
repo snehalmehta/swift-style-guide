@@ -219,6 +219,12 @@ Use extensions to organize your code into logical blocks of functionality. Each 
 
 **Preferred:**
 ```swift
+class MyViewController: UIViewController, UITableViewDataSource, UIScrollViewDelegate {
+    // all methods
+}
+```
+**Not Preferred:**
+```swift
 class MyViewController: UIViewController {
     // class stuff here
 }
@@ -231,13 +237,6 @@ extension MyViewController: UITableViewDataSource {
 // MARK: - UIScrollViewDelegate
 extension MyViewController: UIScrollViewDelegate {
     // scroll view delegate methods
-}
-```
-
-**Not Preferred:**
-```swift
-class MyViewController: UIViewController, UITableViewDataSource, UIScrollViewDelegate {
-    // all methods
 }
 ```
 
