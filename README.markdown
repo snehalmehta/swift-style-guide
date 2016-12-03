@@ -22,6 +22,7 @@ Writing Objective-C? Check out [Objective-C Style Guide](https://github.com/rayw
     * [Protocol Conformance](#protocol-conformance)
     * [Unused Code](#unused-code)
     * [Minimal Imports](#minimal-imports)
+* [Documentation](#documentation)
 * [Spacing](#spacing)
 * [Comments](#comments)
 * [Classes and Structures](#classes-and-structures)
@@ -306,6 +307,18 @@ override func tableView(tableView: UITableView, numberOfRowsInSection section: I
 ### Minimal Imports
 
 Keep imports minimal. For example, don't import `UIKit` when importing `Foundation` will suffice.
+
+## Documentation
+
+* All extension and generic compoennts should have method documentation.
+   eg. 
+    /// Gives height of text
+    ///
+    /// - parameter width: width of UI element
+    /// - parameter font:  font of UI Element
+    ///
+    /// - returns: CGFloat height
+    func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat
 
 ## Spacing
 
