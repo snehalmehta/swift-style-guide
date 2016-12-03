@@ -220,7 +220,11 @@ Use extensions to organize your code into logical blocks of functionality. Each 
 **Preferred:**
 ```swift
 class MyViewController: UIViewController, UITableViewDataSource, UIScrollViewDelegate {
-    // all methods
+
+    // MARK: - UITableViewDataSource
+    -- methods
+    // MARK: - UIScrollViewDelegate
+    -- methods
 }
 ```
 **Not Preferred:**
@@ -253,13 +257,13 @@ Aspirational methods not directly associated with the tutorial whose implementat
 **Not Preferred:**
 ```swift
 override func didReceiveMemoryWarning() {
-     super.didReceiveMemoryWarning()
+    super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
 }
 
 override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-     // #warning Incomplete implementation, return the number of sections
-     return 1
+    // #warning Incomplete implementation, return the number of sections
+    return 1
 }
 
 override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -463,7 +467,7 @@ For functions with long signatures, add line breaks at appropriate points and ad
 
 ```swift
 func reticulateSplines(spline: [Double], adjustmentFactor: Double,
-        translateConstant: Int, comment: String) -> Bool {
+    translateConstant: Int, comment: String) -> Bool {
     // reticulate code goes here
 }
 ```
