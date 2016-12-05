@@ -111,12 +111,12 @@ convertPointAt(column: 42, row: 13)
 timedAction(afterDelay: 1.0, perform: someOtherAction)
 ```
 
-For button actions, follow same standard across the app.
+For button actions, follow same convention across the app.
 ```swift
    eg. loginButtonPressed (suffix Pressed)
 ```
 
-For gestures actions, follow same standard across the project.
+For gestures actions, follow same convention across the project.
 ```swift
    eg. swipeGestureInvoked (suffix Invoked)
 ```
@@ -130,7 +130,7 @@ class Counter {
 }
 ```
 
-For UIViewControllers, follow same standard across the project.
+For UIViewControllers, follow same convention across the project.
 
 **Preferred**
 ```
@@ -141,7 +141,7 @@ For UIViewControllers, follow same standard across the project.
    eg. LoginVC 
 ```
 
-For any UI elements, follow same standard across the project. Avoid using short forms for UI elements.
+For any UI elements, follow same convention across the project. Avoid using short forms for UI elements.
 
 **Preferred**
 ```
@@ -150,6 +150,17 @@ For any UI elements, follow same standard across the project. Avoid using short 
 **Not Preferred**
 ```
    eg. loginBtn, userNameTF
+```
+
+For notification handlers, follow same convention accross the projet.
+
+**Preferred**
+```
+   eg. appNeedsLoginNotificationReceived
+```
+**Not Preferred**
+```
+   eg. appNeedsLogin
 ```
 
 ### Protocols
