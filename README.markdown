@@ -111,6 +111,16 @@ convertPointAt(column: 42, row: 13)
 timedAction(afterDelay: 1.0, perform: someOtherAction)
 ```
 
+For button actions, follow same standard across the app.
+```swift
+   eg. loginButtonPressed (suffix Pressed)
+```
+
+For gestures actions, follow same standard across the project.
+```swift
+   eg. swipeGestureInvoked (suffix Invoked)
+```
+
 For methods, follow the standard Apple convention of referring to the first parameter in the method name:
 
 ```swift
@@ -118,6 +128,28 @@ class Counter {
     func combineWith(otherCounter: Counter, options: Dictionary?) { ... }
     func incrementBy(amount: Int) { ... }
 }
+```
+
+For UIViewControllers, follow same standard across the project.
+
+**Preferred**
+```
+   eg. LoginViewController 
+```
+**Not Preferred**
+```
+   eg. LoginVC 
+```
+
+For any UI elements, follow same standard across the project. Avoid using short forms for UI elements.
+
+**Preferred**
+```
+   eg. loginButton, userNameTextField 
+```
+**Not Preferred**
+```
+   eg. loginBtn, userNameTF
 ```
 
 ### Protocols
